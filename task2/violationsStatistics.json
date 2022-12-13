@@ -1,12 +1,10 @@
-{
-  "violations_statistics" : [ {
-    "type" : "ALCOHOL",
-    "fine_amount" : 24078.0
-  }, {
-    "type" : "SPEEDING",
-    "fine_amount" : 2680.0
-  }, {
-    "type" : "RED_LIGHT",
-    "fine_amount" : 1303.0
-  } ]
-}
+[ {
+  "type" : "ALCOHOL",
+  "fine_amount" : 3521020156.0
+}, {
+  "type" : "RED_LIGHT",
+  "fine_amount" : 338557606.0
+}, {
+  "type" : "SPEEDING",
+  "fine_amount" : 230222760.0
+} ]
