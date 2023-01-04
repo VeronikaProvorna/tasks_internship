@@ -1,0 +1,19 @@
+#loginDiv {
+    background-color: lavender;
+    padding: 10px;
+}
+#welcomeHeader{
+    padding-bottom: 15px;
+}
+
+td{
+    background-color: white;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+  color: dimgrey;
+  text-decoration: none;
+}

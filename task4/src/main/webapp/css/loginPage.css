@@ -1,0 +1,31 @@
+#divHeader{
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+#loginForm{
+    padding: 10px;
+    margin-top: 15px;
+    background-color: lavender;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=password]{
+    height: 30px;
+}
+
+input[type=submit]{
+     background-color: lightgreen;
+     border: none;
+     color: white;
+     padding: 5px 20px;
+     text-decoration: none;
+     margin: 4px 2px;
+     cursor: pointer;
+     font-size: 18px;
+}
+
+td{
+    text-align: center;
+}
