@@ -1,7 +1,9 @@
 package task4;
 
 import java.util.List;
-
+/*
+* Use JWT for auth,don't save password witout hashing, u need add hashing with secret word ( salt ).
+*/
 public class UserDao {
     private List<User> users = List.of(
             new User("nika", "Provorna Veronika", "nika123"),
@@ -17,14 +19,11 @@ public class UserDao {
         }
 
         for (User user : users) {
-            if (login.equals(user.getLogin())) {
-                return true;
-            }
+            if (login.equals(user.getLogin())) return true;
         }
         return false;
     }
 
-    ;
 
     public boolean checkPassword(String login, String pwd) {
         if (login == null || pwd == null) {
@@ -32,19 +31,7 @@ public class UserDao {
         }
 
         for (User user : users) {
-
-            //find user by login
-            if (login.equals(user.getLogin())) {
-
-                //check user's password
-                if (pwd.equals(user.getPwd())) {
-                    return true;
-                } else {
-                    //if we found user and his pwd is wrong - go out of the loop and return false
-                    break;
-                }
-
-            }
+            if (login.equals(user.getLogin()) && pwd.equals(user.getPwd())) return true;
         }
         return false;
     }
